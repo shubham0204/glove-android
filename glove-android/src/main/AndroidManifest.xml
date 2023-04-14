@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application>
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.ml.shubham0204.glove_android.androidx-startup"
+            android:exported="false"
+            tools:node="merge"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="com.ml.shubham0204.glove_android.PythonInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+    </application>
+
+</manifest>
