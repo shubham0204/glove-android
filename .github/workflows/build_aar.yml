@@ -1,0 +1,57 @@
+name: Build and Release Android AAR
+on: [ 'workflow_dispatch']
+jobs:
+  build_apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v3
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+          cache: gradle
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Build with Gradle
+        run: ./gradlew build
+
+      - name: Build AAR
+        run: bash ./gradlew glove-android:assembleRelease --stacktrace
+
+      - name: Bump version for release
+        id: tag_version
+        uses: mathieudutour/github-tag-action@v6.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create a release
+        uses: actions/create-release@v1
+        id: create_release
+        with:
+          draft: false
+          prerelease: false
+          release_name: glove-android - ${{ steps.tag_version.outputs.new_tag }}
+          tag_name: ${{ steps.tag_version.outputs.new_tag }}
+          body_path: CHANGELOG.md
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+      - name: Upload APK to release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: glove-android/build/outputs/aar/glove-android-release.aar
+          asset_name: glove-android.aar
+          asset_content_type: application/android-archive
+
+      - name: Upload APK to artifacts
+        uses: actions/upload-artifact@v1
+        with:
+          name: glove-android-release
+          path: glove-android/build/outputs/aar/glove-android-release.aar
