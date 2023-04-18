@@ -12,7 +12,7 @@ word embeddings.
 ```groovy
 dependencies {
     ...
-    implementation files('libs/glove-android-release.aar')
+    implementation files('libs/glove-android.aar')
     ...
 }
 ```

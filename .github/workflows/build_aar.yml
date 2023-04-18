@@ -1,7 +1,7 @@
 name: Build and Release Android AAR
 on: [ 'workflow_dispatch']
 jobs:
-  build_apk:
+  build_aar:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
