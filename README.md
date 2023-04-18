@@ -5,9 +5,9 @@ word embeddings.
 
 <html>
 <p float="left">
-  <img src="images/img1.png" width="100" />
-  <img src="images/img1.png" width="100" /> 
-  <img src="images/img1.png" width="100" />
+  <img src="https://user-images.githubusercontent.com/41076823/232805813-e6b28680-1865-4add-9fd2-8712d20abb0c.png" width="200" />
+  <img src="https://user-images.githubusercontent.com/41076823/232805936-82a0f3fb-dcd6-4e7f-9ab2-db2793a06c39.png" width="200" /> 
+  <img src="https://user-images.githubusercontent.com/41076823/232806007-ad5e48df-403a-4aca-87b5-be6f660b303e.png" width="200" />
 </p>
 </html>
 
