@@ -3,6 +3,14 @@
 `glove-android` is an Android library that provides an interface for using popular [GloVe](https://nlp.stanford.edu/projects/glove/) 
 word embeddings.
 
+<html>
+<p float="left">
+  <img src="images/img1.png" width="100" />
+  <img src="images/img1.png" width="100" /> 
+  <img src="images/img1.png" width="100" />
+</p>
+</html>
+
 ## Installation
 
 1. Download `glove-android.aar` from the latest release. (See [Releases](https://github.com/shubham0204/glove-android/releases))
