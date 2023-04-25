@@ -1,2 +1,1 @@
-- Updated `README.md`
-- Improved `app` which is a demo for `glove-android` library
+- Updated `androidx.activity:activity-compose` version
