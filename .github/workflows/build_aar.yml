@@ -22,7 +22,8 @@ jobs:
       - name: Build AAR
         run: bash ./gradlew glove-android:assembleRelease --stacktrace
 
-      - uses: dev-drprasad/delete-older-releases@v0.2
+      - name: Delete older releases
+        uses: dev-drprasad/delete-older-releases@v0.2.1
         with:
           repo: shubham0204/glove-android
           keep_latest: 1
