@@ -1,0 +1,1 @@
+sourceset_dependencies='{":glove-android:dokkaHtml/androidTestRelease":[],":glove-android:dokkaHtml/debug":[],":glove-android:dokkaHtml/main":[],":glove-android:dokkaHtml/release":[],":glove-android:dokkaHtml/testFixtures":[],":glove-android:dokkaHtml/testFixturesDebug":[],":glove-android:dokkaHtml/testFixturesRelease":[]}'

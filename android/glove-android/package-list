@@ -1,0 +1,17 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:com.ml.shubham0204.glove_android////PointingToDeclaration/glove-android/com.ml.shubham0204.glove_android/index.html
+$dokka.location:com.ml.shubham0204.glove_android/GloVe.Companion///PointingToDeclaration/glove-android/com.ml.shubham0204.glove_android/-glo-ve/-companion/index.html
+$dokka.location:com.ml.shubham0204.glove_android/GloVe.Companion/compare/#kotlin.FloatArray#kotlin.FloatArray/PointingToDeclaration/glove-android/com.ml.shubham0204.glove_android/-glo-ve/-companion/compare.html
+$dokka.location:com.ml.shubham0204.glove_android/GloVe.Companion/loadEmbeddings/#kotlin.Function1[com.ml.shubham0204.glove_android.GloVe.GloVeEmbeddings,kotlin.Unit]/PointingToDeclaration/glove-android/com.ml.shubham0204.glove_android/-glo-ve/-companion/load-embeddings.html
+$dokka.location:com.ml.shubham0204.glove_android/GloVe.GloVeEmbeddings///PointingToDeclaration/glove-android/com.ml.shubham0204.glove_android/-glo-ve/-glo-ve-embeddings/index.html
+$dokka.location:com.ml.shubham0204.glove_android/GloVe.GloVeEmbeddings/GloVeEmbeddings/#com.chaquo.python.PyObject/PointingToDeclaration/glove-android/com.ml.shubham0204.glove_android/-glo-ve/-glo-ve-embeddings/-glo-ve-embeddings.html
+$dokka.location:com.ml.shubham0204.glove_android/GloVe.GloVeEmbeddings/getEmbedding/#kotlin.String/PointingToDeclaration/glove-android/com.ml.shubham0204.glove_android/-glo-ve/-glo-ve-embeddings/get-embedding.html
+$dokka.location:com.ml.shubham0204.glove_android/GloVe///PointingToDeclaration/glove-android/com.ml.shubham0204.glove_android/-glo-ve/index.html
+$dokka.location:com.ml.shubham0204.glove_android/GloVe/GloVe/#/PointingToDeclaration/glove-android/com.ml.shubham0204.glove_android/-glo-ve/-glo-ve.html
+$dokka.location:com.ml.shubham0204.glove_android/PythonInitializer///PointingToDeclaration/glove-android/com.ml.shubham0204.glove_android/-python-initializer/index.html
+$dokka.location:com.ml.shubham0204.glove_android/PythonInitializer/PythonInitializer/#/PointingToDeclaration/glove-android/com.ml.shubham0204.glove_android/-python-initializer/-python-initializer.html
+$dokka.location:com.ml.shubham0204.glove_android/PythonInitializer/create/#android.content.Context/PointingToDeclaration/glove-android/com.ml.shubham0204.glove_android/-python-initializer/create.html
+$dokka.location:com.ml.shubham0204.glove_android/PythonInitializer/dependencies/#/PointingToDeclaration/glove-android/com.ml.shubham0204.glove_android/-python-initializer/dependencies.html
+com.ml.shubham0204.glove_android
+
