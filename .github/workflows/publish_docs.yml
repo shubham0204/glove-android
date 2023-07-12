@@ -30,7 +30,7 @@ jobs:
         run: |
           mkdir -p gh-pages/android
           mv README.md gh-pages/android/README.md
-          mv text-predictor/build/dokka/html/* gh-pages/android/
+          mv glove-android/build/dokka/html/* gh-pages/android/
       - name: Publish docs
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
