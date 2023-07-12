@@ -1,2 +1,1 @@
-- Added `ev-drprasad/delete-older-releases@v0.2` action to delete older releases
-  
+- Added Dokka documentation and GitHub action
