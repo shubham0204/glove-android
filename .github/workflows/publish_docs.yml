@@ -28,9 +28,9 @@ jobs:
 
       - name: Move docs to gh-pages
         run: |
-          mkdir -p gh-pages/android
+          mkdir gh-pages
           mv README.md gh-pages/android/README.md
-          mv glove-android/build/dokka/html/* gh-pages/android/
+          mv glove-android/build/dokka/html/* gh-pages/
       - name: Publish docs
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
