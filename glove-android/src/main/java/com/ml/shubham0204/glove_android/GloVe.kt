@@ -15,10 +15,14 @@ import kotlin.math.sqrt
  * ### Example Usage:
 
  ```
+val gloveEmbeddings: GloVeEmbeddings
+
 GloVe.loadEmbeddings {
-    timeTaken.value = (System.currentTimeMillis() - t1).toInt()
     gloveEmbeddings = it
 }
+
+val embedding = gloveEmbeddings.getEmbedding( "hello" )
+println( embedding.contentToString() )
 ```
 
  *
@@ -48,6 +52,7 @@ class GloVe {
         fun compare( embedding1 : FloatArray , embedding2 : FloatArray ) : Float {
             val mag1 = sqrt( embedding1.map { it * it }.sum() )
             val mag2 = sqrt( embedding1.map { it * it }.sum() )
+
             val dot = embedding1.mapIndexed{ i , xi -> xi * embedding2[ i ] }.sum()
             return dot / (mag1 * mag2)
         }
