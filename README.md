@@ -25,6 +25,29 @@ dependencies {
 }
 ```
 
+## Usage
+
+To load the embeddings from storage, use the `GloVe.loadEmbeddings` method, which returns a `GloveEmbeddings` 
+object as a parameter in the given lambda function.
+
+```kotlin
+val gloveEmbeddings: GloVeEmbeddings
+
+GloVe.loadEmbeddings {
+    gloveEmbeddings = it
+}
+```
+
+Call the `gloveEmbeddings.getEmbedding` method providing a word as parameter. The resultant embedding 
+is returned as a `FloatArray` with `size=50` (indicating a 50-D embedding).
+
+```kotlin
+val embedding = gloveEmbeddings.getEmbedding( "hello" )
+println( embedding.contentToString() )
+```
+
+> If no embedding is found for the given word, an empty `FloatArray` is returned
+
 ## Citation
 
 ```text
