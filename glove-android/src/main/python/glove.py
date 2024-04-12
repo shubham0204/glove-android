@@ -15,4 +15,4 @@ def get_embedding( word ):
     try:
         return vectors[ indexes[ word ] ]
     except KeyError:
-        return []
+        return [ 0.0 ] * 50
