@@ -60,3 +60,7 @@ println( embedding.contentToString() )
   url = {http://www.aclweb.org/anthology/D14-1162},
 }
 ```
+
+## Useful Resources
+
+* [Reddit discussion on `r/androiddev`](https://www.reddit.com/r/androiddev/comments/168u3h7/gloveandroid_an_android_library_providing_access/)
